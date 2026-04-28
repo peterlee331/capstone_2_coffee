@@ -1,0 +1,42 @@
+Model Metrics Summary
+
+Final Model: Linear Regression
+
+Features Used:
+- hour_of_day (one-hot encoded)
+- coffee_name (one-hot encoded)
+- Time_of_Day (one-hot encoded)
+- Weekday (one-hot encoded)
+- Month_name (one-hot encoded)
+
+Model Parameters:
+- fit_intercept: True
+
+Hyperparameters:
+- None (standard Linear Regression)
+
+Performance Metrics:
+
+Test Set:
+- R²: 0.9785
+- RMSE: 0.7252
+
+Cross-Validation (5-fold):
+- RMSE per fold: [0.6872, 0.7540, 0.8305, 0.7156, 0.7037]
+- Mean CV RMSE: 0.7382
+
+Comparison Models:
+
+Ridge Regression:
+- Best Alpha: 0.01
+- Test R²: 0.9785
+- Test RMSE: 0.7252
+- Mean CV RMSE: 0.7382
+
+Random Forest:
+- Test R²: 0.9745
+- Test RMSE: 0.7900
+- Mean CV RMSE: 0.8750
+
+Conclusion:
+Linear Regression was selected due to equivalent performance to Ridge and better performance than Random Forest, while maintaining simplicity and interpretability.
